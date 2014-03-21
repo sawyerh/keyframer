@@ -1,0 +1,91 @@
+@import 'toolbox'
+@import 'solarized'
+
+*
+  +box-sizing(border-box)
+
+body
+  font-size: 14px
+  font-family: Helvetica, sans-serif
+  margin: 0
+  padding: 0
+  background: rgb(245,245,247)
+  color: #222
+
+a
+  color: #222
+
+.input, .output
+  width: 50%
+  height: 100%
+  position: fixed
+  overflow: auto
+  top: 0
+  padding: 60px
+
+.input
+  left: 0
+  border-right: 1px solid $bc_default
+
+.output
+  right: 0
+  background: none
+
+
+// Modules
+// ==========================================
+
+.button, input
+  border-radius: 3px
+  padding: 15px
+  border: 0 none
+  width: 100%
+
+.button
+  display: inline-block
+  background: #000
+  color: #fff
+  font-weight: bold
+  cursor: pointer
+  text-align: center
+
+  &:hover
+    opacity: 0.8
+
+input[type="number"], input[type="text"]
+  border: 1px solid $bc_default
+  font-size: 24px
+  font-weight: 300
+
+  &[readonly]
+    background: none
+
+// Keyframes
+// ==========================================
+.keyframes
+  margin: 0
+  padding-left: 0
+
+.keyframe
+  margin: 0 0 15px
+  position: relative
+
+  &.default
+    pointer-events: none
+
+.remove-keyframe
+  font-size: 20px
+  position: absolute
+  right: -25px
+  top: 50%
+  margin-top: -10px
+  cursor: pointer
+  color: $bc_default
+
+  &:hover
+    color: red
+
+.note
+  color: #999
+  font-size: 12px
+  margin-top: 45px

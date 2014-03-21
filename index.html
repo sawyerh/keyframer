@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>CSS Keyframer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="input">
+
+    <ol class="keyframes">
+      <li class="default keyframe">
+        <input type="number" placeholder="Time in seconds" value="0" readonly="true" />
+      </li>
+    </ol>
+
+    <span class="button js-add-keyframe">New keyframe</span>
+
+    <div class="note">
+      <p class="note">Quick and dirty primarily for my use-case, so this might be super buggy for you. Beware.</p>
+      <a href="http://twitter.com/sawyerh" target="_blank">@sawyerh</a>
+    </div>
+  </section>
+
+  <div class="output-wrap">
+<pre data-language="css" class="output">
+@keyframes animationName {
+  0%{}
+}
+</pre>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/rainbow-custom.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
